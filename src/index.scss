@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 font-body px-5;
+    color: white;
+    scroll-behavior: smooth;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    width: 100%;
+    @apply mx-auto;
+  }
+  .movie-list .swiper-slide {
+    height: auto !important;
+    width: 300px;
+  }
+  .movies-similar .swiper-slide {
+    height: auto;
+  }
+  .banner .swiper {
+    height: 100%;
+  }
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .selected {
+    @apply text-primary px-4 py-2 rounded;
+    background-color: #fff;
+  }
+  li {
+    line-height: none;
+  }
+}
+#root {
+  overflow: hidden;
+}
