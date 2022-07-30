@@ -7,7 +7,7 @@ import NotFoundPage from "./page/NotFoundPage";
 
 const HomePage = lazy(() => import("./page/HomePage"));
 const MovieDetailPage = lazy(() => import("./page/MovieDetailPage"));
-const MoviePageV2 = lazy(() => import("./page/MoviePageV2"));
+const MoviePageV2 = lazy(() => import("./page/MoviePage"));
 function App() {
   return (
     <>
@@ -22,7 +22,7 @@ function App() {
                 </>
               }
             ></Route>
-            <Route path="movies" element={<MoviePageV2></MoviePageV2>}></Route>
+            <Route path="movies" element={<MoviePage></MoviePage>}></Route>
             <Route
               path="movies/:movieId"
               element={<MovieDetailPage></MovieDetailPage>}
